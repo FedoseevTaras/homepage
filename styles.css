@@ -245,3 +245,23 @@ h2 {
 .sobi-cmo__description ul li {
   list-style: disc;
 }
+.footer {
+  padding: 0px 0px 80px;
+}
+.footer__contacts {
+  margin-top: 40px;
+}
+.footer__contacts__item {
+  align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .footer__contacts {
+    flex-direction: column;
+  }
+  .footer__contacts__item {
+    justify-content: left;
+  }
+}
+.footer__contacts__item__information {
+  margin-left: 15px;
+}
