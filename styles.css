@@ -120,3 +120,72 @@ h1 {
     width: 70%;
   }
 }
+.main__container {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-column-gap: 10%;
+  padding: 42px 0px 80px;
+}
+@media screen and (max-width: 1200px) {
+  .main__container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 10%;
+    padding: 42px 0px 80px;
+  }
+}
+
+h2 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 73px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media screen and (max-width: 380px) {
+  h3 {
+    font-size: 15px;
+  }
+}
+.text-gray-decore {
+  color: #8a8a8a;
+}
+.about ul li:not(:first-child) {
+  margin-top: 40px;
+}
+
+.education ul li {
+  margin-top: 40px;
+}
+.skills ul li {
+  margin-top: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .about ul li:not(:first-child) {
+    margin-top: 20px;
+  }
+  .block__decoration__title {
+    margin-top: -20px;
+  }
+  .education ul li {
+    margin-top: 20px;
+  }
+  .skills ul li {
+    margin-top: 20px;
+  }
+}
+.skills__frameworks li:not(:first-child) {
+  margin-top: 0px;
+}
+
+.skills__languages li:not(:first-child) {
+  margin-top: 0px;
+}
+.skills__scm li:not(:first-child) {
+  margin-top: 0px;
+}
+.skills__tools li:not(:first-child) {
+  margin-top: 0px;
+}
