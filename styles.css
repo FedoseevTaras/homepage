@@ -189,3 +189,59 @@ h2 {
 .skills__tools li:not(:first-child) {
   margin-top: 0px;
 }
+.work-experience__decoration {
+  margin-top: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .work-experience__decoration {
+    margin-top: 30px;
+  }
+  .work-experience {
+    margin-top: 20px;
+    line-height: 50px;
+  }
+  .work-experience h2 {
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  /* h2 {
+    line-height: 50px;
+  } */
+}
+.work-eperience__sobi-cmo {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-column-gap: 10%;
+  margin-top: 40px;
+}
+.sobi-cmo__date {
+  margin-top: 20px;
+}
+.sobi-cmo__description {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .sobi-cmo_imgArrow {
+    margin-top: 20px;
+  }
+}
+.sobi-cmo__description {
+  margin-top: 20 px;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity 600ms, visibility 600ms;
+}
+.vissible {
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+
+.sobi-cmo__description ul li {
+  list-style: disc;
+}
