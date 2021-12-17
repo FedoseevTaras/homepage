@@ -1,0 +1,267 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+} */
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: #000;
+}
+.d-flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  font-family: Montserrat;
+  padding-top: 90px;
+}
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0px 20px;
+}
+._container {
+  max-width: 1600px;
+  min-width: 312px;
+  margin: 0px auto;
+}
+.header__container {
+  align-items: flex-end;
+}
+@media screen and (max-width: 930px) {
+  .header__container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .header__name {
+    order: 2;
+  }
+  .header__contacts {
+    order: 1;
+  }
+  .header__photo {
+    order: 3;
+  }
+}
+.header__name {
+  max-width: 350px;
+}
+h1 {
+  font-family: Montserrat;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 70px;
+  letter-spacing: 0em;
+}
+.header__contacts {
+  flex-direction: column;
+  height: 73px;
+}
+.contacts_icons {
+  width: 230px;
+}
+.contacts_icons_item {
+  width: 33px;
+  height: 33px;
+  transition: 0.5s;
+}
+.contacts_icons_item:hover {
+  width: 40px;
+  height: 40px;
+  margin-top: -7px;
+  margin-bottom: -7px;
+  margin-right: -7px;
+}
+
+.header__decoration {
+  margin-top: 80px;
+}
+.block__decoration {
+  background-color: black;
+  height: 4px;
+}
+.block__decoration__title {
+  background-color: black;
+  height: 4px;
+}
+@media screen and (max-width: 1200px) {
+  .block__decoration__title {
+    width: 70%;
+  }
+}
+.main__container {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-column-gap: 10%;
+  padding: 42px 0px 80px;
+}
+@media screen and (max-width: 1200px) {
+  .main__container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 10%;
+    padding: 42px 0px 80px;
+  }
+}
+
+h2 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 73px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media screen and (max-width: 380px) {
+  h3 {
+    font-size: 15px;
+  }
+}
+.text-gray-decore {
+  color: #8a8a8a;
+}
+.about ul li:not(:first-child) {
+  margin-top: 40px;
+}
+
+.education ul li {
+  margin-top: 40px;
+}
+.skills ul li {
+  margin-top: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .about ul li:not(:first-child) {
+    margin-top: 20px;
+  }
+  .block__decoration__title {
+    margin-top: -20px;
+  }
+  .education ul li {
+    margin-top: 20px;
+  }
+  .skills ul li {
+    margin-top: 20px;
+  }
+}
+.skills__frameworks li:not(:first-child) {
+  margin-top: 0px;
+}
+
+.skills__languages li:not(:first-child) {
+  margin-top: 0px;
+}
+.skills__scm li:not(:first-child) {
+  margin-top: 0px;
+}
+.skills__tools li:not(:first-child) {
+  margin-top: 0px;
+}
+.work-experience__decoration {
+  margin-top: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .work-experience__decoration {
+    margin-top: 30px;
+  }
+  .work-experience {
+    margin-top: 20px;
+    line-height: 50px;
+  }
+  .work-experience h2 {
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  /* h2 {
+    line-height: 50px;
+  } */
+}
+.work-eperience__sobi-cmo {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-column-gap: 10%;
+  margin-top: 40px;
+}
+.sobi-cmo__date {
+  margin-top: 20px;
+}
+.sobi-cmo__description {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .sobi-cmo_imgArrow {
+    margin-top: 20px;
+  }
+}
+.sobi-cmo__description {
+  margin-top: 20 px;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity 600ms, visibility 600ms;
+}
+.vissible {
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+
+.sobi-cmo__description ul li {
+  list-style: disc;
+}
+.footer {
+  padding: 0px 0px 80px;
+}
+.footer__contacts {
+  margin-top: 40px;
+}
+.footer__contacts__item {
+  align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .footer__contacts {
+    flex-direction: column;
+  }
+  .footer__contacts__item {
+    justify-content: left;
+  }
+}
+.footer__contacts__item__information {
+  margin-left: 15px;
+}
